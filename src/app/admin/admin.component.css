@@ -1,0 +1,72 @@
+.container{
+    padding: 3em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.books-container{
+    display: flex;
+    width: 100%;
+    padding-top: 5em;
+}
+.books-form{
+    width: 50%;
+    padding: 2em;
+    background-color: white;
+}
+
+.form-control{
+    max-width: 100%;
+}
+.books-grid{
+    width: 50%;
+    padding: 2em;
+    background-color: #eee;
+    
+}
+
+.books-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.2em;
+}
+
+.books-row-details{
+    background: white;
+    flex-grow: 1;
+    padding: 0.4em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2em;
+    cursor: pointer;
+}
+.list-label{
+    display: flex;
+    flex-grow: 1;
+    padding: 0.4em 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2em;
+    background: rgb(40,114,128);
+    background: linear-gradient(90deg, rgba(40,114,128,1) 43%, rgba(52,166,189,1) 100%); 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.edit-info{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bolder;
+}
+.books-header{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
