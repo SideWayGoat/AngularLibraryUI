@@ -11,8 +11,6 @@ import { BookService } from 'src/Service/BookService';
 
 export class HomeComponent {
 
-  title = 'SUT Library';
-
   books: BookModel[] = [];
   searchText:string = ''
   searchInput:string = ''
@@ -41,40 +39,4 @@ export class HomeComponent {
     })
   }
 
-  onSubmit(){
-    if(this.book.id == ''){
-      this.bookService.addBook(this.book).subscribe(response => {
-        this.getAllBooks()
-        this.book = {
-          id:'',
-          title:'',
-          author:'',
-          genre:'',
-          description:'',
-          publishingYear:'',
-          numberInStock:'',
-          img:''
-        }
-      })
-    }
-    else{
-      this.updateBook(this.book)
-    }
-  }
-
-  onSearch(query:string){
-    this.bookService.searchOptions(query).subscribe( Response => {
-      this.books = Response.result
-    })
-  }
-  deleteBook(id:string){
-    this.bookService.deleteBook(id).subscribe( Response => {
-      this.getAllBooks
-    })
-  }
-  updateBook(book:BookModel){
-    this.bookService.updateBook(book).subscribe(Response => {
-      this.getAllBooks
-    })
-  }
 }
