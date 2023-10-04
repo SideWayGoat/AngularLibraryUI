@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FilterPipe } from './filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FilterPipe,
-    HomeComponent
+    HomeComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
