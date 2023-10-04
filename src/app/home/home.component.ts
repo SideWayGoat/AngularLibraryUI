@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import { BookModel } from './Models/BookModel';
+import { BookModel } from '../Models/BookModel';
 import { BookService } from 'src/Service/BookService';
 
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
 })
-export class AppComponent {
+
+
+export class HomeComponent {
+
   title = 'SUT Library';
 
   books: BookModel[] = [];

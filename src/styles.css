@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1aca82;
+}
+.navbar h1{
+    padding: 1em;
+    text-align: center;
+}
+.navbar nav{
+    align-self: center;
+}
+button{
+    border: 1 ;
+    margin: 1em;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.searchBar{
+    transition: border-color 0.3s, box-shadow 0.3s;
+    color: #333;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.filterBar{
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left: 2rem;
+}
+.form-control{
+    max-width:max-content;
+    padding: 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.form-control:focus(){
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    max-width: 300px;
+}
+
+.book-image {
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    /* You can add additional styling for the image container here */
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.book-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.book-author {
+    margin-top: 1em;
+    margin-bottom: 2rem;
+}
+
+.book-description {
+
+}
+
+.book-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publishing-year {
+}
+
+.genre {
+}
