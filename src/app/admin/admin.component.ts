@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { BookModel } from '../Models/BookModel';
 import { BookService } from 'src/Service/BookService';
-import { FormBuilder, FormGroup, FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-admin',
@@ -43,8 +43,9 @@ export class AdminComponent {
   }
 
   reset(){
-    this.form.reset();
+    this.form.reset()
   }
+  
 
   onSubmit(){
     if(this.book.id == ''){
@@ -77,9 +78,9 @@ export class AdminComponent {
     })
   }
   updateBook(book:BookModel){
-    this.bookService.updateBook(book).subscribe(Response => {
-      this.getAllBooks
-    })
+      this.bookService.updateBook(this.book).subscribe(Response => {
+        this.getAllBooks()
+      })
   }
   populateForm(book:BookModel){
     this.book = book

@@ -28,7 +28,7 @@ export class BookService{
         return this.http.delete<BookModel>(this.deleteUrl + id)
     }
     updateBook(book:BookModel):Observable<BookModel>{
-        return this.http.patch<BookModel>(this.updateUrl + book.id, book)
+        return this.http.put<BookModel>(this.updateUrl + book.id, book)
     }
     addBook(Book:BookModel):Observable<BookModel>{
         Book.id = ''

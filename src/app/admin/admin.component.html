@@ -1,4 +1,3 @@
-<html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -9,6 +8,9 @@
         <div class="books-form">
             <form [formGroup]="form" (ngSubmit)="onSubmit()">
                 <h3>{{formTitle}}</h3>
+                <div class="form-group">
+                    <input name="id" hidden formControlName="id" [(ngModel)]="book.id" class="form-control">
+                </div>
                 <div class="form-group">
                     <label>Title</label>
                     <input name="title" formControlName="title" [(ngModel)]="book.title" class="form-control">
@@ -60,4 +62,3 @@
         </div>
     </div>
 </div>
-</html>
