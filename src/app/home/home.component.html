@@ -1,3 +1,7 @@
+<div class="form-group">
+    <input type="text" class="filterClass" id="search-text" aria-describedby="search-text" 
+    [(ngModel)]="searchText" placeholder="Filter by: Genre, Title or Author" autofocus>
+</div>
 <div class="content" role="main">
     <div class="book">
         <div class="book-list">
@@ -20,10 +24,6 @@
                 </div>
             </form>
         </div>
-        <div class="form-group">
-            <label class="filterBar"for="search-text">Filter by</label>
-            <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
-            [(ngModel)]="searchText" placeholder="Genre, Title, Author" autofocus>
-        </div>
+
     </div>
 </div>
