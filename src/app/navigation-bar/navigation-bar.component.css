@@ -4,11 +4,15 @@ a:hover{
 }
 .navbar{
     display: flex;
-    background: linear-gradient(to bottom, #80cbc4, #00796b);
-    justify-content: space-evenly;
-}
-.navbar h1{
+    background: linear-gradient(90deg, rgba(68,77,240,1) 1%, rgba(191,23,80,1) 92%);
+    justify-content: space-around;
     padding: 1em;
+}
+.nav-title h1{
+    font-weight: bold;
+}
+
+.navbar h1{
     text-align: center;
 }
 .navbar nav{
@@ -20,18 +24,24 @@ button a{
     transition: color 0.3s;
 }
 button{
-    border: 1 ;
+    padding: 0.2em;
     margin: 1em;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    transition: color 0.3s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
 }
 .searchBar{
     transition: border-color 0.3s, box-shadow 0.3s;
     color: #333;
+    padding: 0.2em;
+    margin: 1em;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;

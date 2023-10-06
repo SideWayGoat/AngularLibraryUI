@@ -1,10 +1,11 @@
 <div class="navbar">
-    <h1>{{title}}</h1>
-    <nav>
-        <button mat-button><a class="fas fa-arrow-right" href="../home">Home</a></button>
-        <button mat-button><a class="fas fa-arrow-right" href="../admin">Admin</a></button>
-        <!-- <input class="searchBar" matInput placeholder="Search" [(ngModel)]="searchInput" name="search">
-        <button mat-button (click)="onSearch(searchInput)" type="button"><i class="fas fa-arrow-right">Search</i></button>
-        <button mat-button (click)="getAllBooks()" type="button"><i class="fas fa-arrow-right">All Books</i></button> -->
-    </nav>
+    <div class="nav-title">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="nav-button">
+        <nav>
+            <button mat-button><a class="fas fa-arrow-right" href="../home">Home</a></button>
+            <button mat-button><a class="fas fa-arrow-right" href="../admin">Admin</a></button>
+            </nav>
+        </div>
 </div>
