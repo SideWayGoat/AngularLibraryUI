@@ -22,7 +22,7 @@ export class BookService{
     }
 
     searchOptions(query:string):Observable<any>{
-        return this.http.get<any[]>(this.searchUrl + query)
+        return this.http.get<BookModel>(this.searchUrl + query)
     }
     deleteBook(id:string):Observable<BookModel>{
         return this.http.delete<BookModel>(this.deleteUrl + id)

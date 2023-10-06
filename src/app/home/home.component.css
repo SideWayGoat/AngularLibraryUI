@@ -8,13 +8,11 @@
 }
 .book-item {
     display: flex;
-    align-items: center;
     margin-bottom: 2em;
-    margin-left: 2em;
-    max-height: 600px;
-    position: relative;
-    background: #9999;
+    margin-left: 1em;
+    margin-right: 1em;
     border-radius: 5px;
+    max-height: 700px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -23,21 +21,17 @@
 .book-list {
     display: grid;
     grid-template-columns:auto auto auto  ;
-    margin-left: 2rem;
 }
 
 .book-image {
     flex: 1;
     align-items: center;
     max-width: auto;
-    max-width: 478px;
-    max-height: 400px;
 }
 .book-image img{
     object-fit: cover;
     max-width: 100%;
-    max-height: auto;
-    padding-right: 1em;
+    min-height: 450px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -47,10 +41,14 @@
 
 .book-details {
     flex: 1;
-    top: 0;
-}
-.book-details .book-title{
-    top: 0;
+    padding-left: 3em;
+    padding-right: 1em;
+    background-color: #9999;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .book-title {
@@ -66,26 +64,27 @@
 
 .book-description {
     overflow: auto;
-    max-height: 200px;
+    max-height: 21em;
     scrollbar-width: none;
 }
-.filterBar{
-    border: 5px solid black;
-}
-.filterClass{
+.outer{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.inner input{
     text-align: center;
-    margin-left: 36rem;
-    margin-top: 1em;
-    min-width: 478px;
+    width: 40em;
+    margin: 0.5em;
+    padding: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 
 
 .book-info {
@@ -95,6 +94,112 @@
 }
 
 
-.genre {
-    padding-right: 0.5em;
+
+@media screen and (max-width: 1280px){
+    .book-list {
+        display: grid;
+        grid-template-columns:auto auto auto ;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .book-item{
+        max-height: 300px;
+    }
+    .book-details{
+        padding-right: 2em;
+        padding-left: 1em;
+    }
+    .book-image img{
+        min-height: 300px;
+    }
+    .book-description{
+        max-height: 180px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .book-list {
+        display: grid;
+        grid-template-columns:auto auto;
+        margin-left: 2rem;
+    }
+    .book-description{
+        padding-bottom: 15em;
+    }
+    .book-item{
+        max-height: 330px;
+    }
+    .book-description{
+        max-height: 180px;
+    }
+}
+@media screen and (max-width: 768px){
+    .book-list {
+        display: grid;
+        grid-template-columns:auto auto;
+        margin-left: 1em;
+    }
+    .inner input{
+        max-width: 466px;
+        margin:0.5em;
+        padding:0.5em;
+    }
+    .book-item {
+        margin: 1em;
+        max-height: 19em;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .book-description{
+        padding-bottom: 12em;
+        margin-right: 1em;
+    }
+    .book-image{
+        background-color: transparent;
+    }
+    .book-image img {
+        max-height: 19em;
+        max-width: auto;
+    }
+
+
+}
+@media screen and (max-width: 480px){
+    .book-list {
+        display: grid;
+        grid-template-columns:auto;
+        margin-left: 1rem;
+    }
+    .book-description{
+        padding-bottom: 12em;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .book-list {
+        display: grid;
+        grid-template-columns:auto;
+        margin-left: 0.4em;
+    }
+    .inner input{
+        max-width: 310px;
+        margin:0.5em;
+        padding:0.5em;
+    }
+    .book-item {
+        min-width: 290px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 1em;
+        background: #9999;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
 }
