@@ -23,7 +23,12 @@ h1{
 }
 
 .form-control{
-    max-width: 100%;
+    max-width:100%;
+    padding: 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
 }
 .books-grid{
     width: 50%;

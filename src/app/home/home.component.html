@@ -1,6 +1,8 @@
-<div class="form-group">
-    <input type="text" class="filterClass" id="search-text" aria-describedby="search-text" 
-    [(ngModel)]="searchText" placeholder="Filter by: Genre, Title or Author" autofocus>
+<div class="outer">
+    <div class="inner">
+        <input type="text" id="search-text" aria-describedby="search-text" 
+        [(ngModel)]="searchText" placeholder="Filter by: Genre, Title or Author" autofocus>
+    </div>
 </div>
 <div class="content" role="main">
     <div class="book">
