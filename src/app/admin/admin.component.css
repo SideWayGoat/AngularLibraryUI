@@ -20,6 +20,8 @@ h1{
     width: 50%;
     padding: 2em;
     background-color: white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .form-control{
@@ -34,7 +36,15 @@ h1{
     width: 50%;
     padding: 2em;
     background-color: #eee;
-    
+    border-bottom-right-radius: 5px;
+    border-top-right-radius:5px;
+}
+.outer{
+    display: flex;
+}
+.inner{
+    width: 100%;
+    text-align: center;
 }
 
 .books-row{
