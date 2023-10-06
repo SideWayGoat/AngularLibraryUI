@@ -14,7 +14,7 @@ export class AdminComponent {
   searchInput:string = ''
   formTitle:string = "Create/Edit book";
   form: FormGroup
-
+  adminTitle = "Admin Controls"
   book: BookModel = {
     id:'',
     title:'',
