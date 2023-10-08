@@ -11,14 +11,15 @@ a:hover{
     padding: 1em;
     text-align: center;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgb(99, 12, 70), 0 0 1em rgb(79, 79, 92);
+    text-shadow: 1px 1px 2px rgb(21, 111, 184, 0.795), 0 0 0.5em rgb(105, 105, 148);
 }
 .navbar nav{
     align-self: center;
 }
 button a{
     text-decoration: none;
-    color:blueviolet;
+    font-weight: bold;
+    color:rgba(21, 111, 184, 0.795);
     transition: color 0.3s;
 }
 button{
@@ -39,4 +40,10 @@ button{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+@media screen and (max-width: 478px){
+    .navbar h1{
+        padding: 0.3em;
+        padding-bottom: 0.01em;
+    }
 }
