@@ -1,10 +1,6 @@
-a:hover{
-    text-decoration: none;
-    color: black;
-}
 .navbar{
     display: flex;
-    background-color: #928d8de3;
+    background-color: grey;
     justify-content: space-evenly;
 }
 .navbar h1{
@@ -31,15 +27,6 @@ button{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     transition: color 0.3s;
-}
-.searchBar{
-    transition: border-color 0.3s, box-shadow 0.3s;
-    color: #333;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
 }
 @media screen and (max-width: 478px){
     .navbar h1{
