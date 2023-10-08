@@ -10,7 +10,7 @@
             <form *ngFor="let book of books | appFilter: searchText">
                 <div class="book-item">
                     <div class="book-image">
-                        <img src={{book.img}}>
+                        <img src={{book.img}} onerror="this.src='https://t3.ftcdn.net/jpg/03/34/83/22/360_F_334832255_IMxvzYRygjd20VlSaIAFZrQWjozQH6BQ.jpg'">
                     </div>
                     <div class="book-details">
                         <p class="book-title">{{book.title}}</p>
