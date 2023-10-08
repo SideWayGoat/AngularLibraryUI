@@ -41,9 +41,22 @@ export class AdminComponent {
   ngOnInit():void{
     this.getAllBooks()
   }
+  formReset(){
+    this.book = {
+      id:'',
+      title:'',
+      author:'',
+      genre:'',
+      description:'',
+      publishingYear:'',
+      numberInStock:'',
+      img:''
+    }
+  }
 
   reset(){
-    this.form.reset()
+    this.book = <BookModel>{}
+    this.formReset()
   }
   
 

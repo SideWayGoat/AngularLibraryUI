@@ -59,6 +59,11 @@
     align-items: center;
     margin: 0.2em;
     cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .list-label{
     display: flex;
@@ -67,9 +72,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 0.2em;
-    background: linear-gradient(90deg, rgba(40,114,128,1) 43%, rgba(52,166,189,1) 100%); 
+    background: linear-gradient(90deg, rgba(40,114,128,1) 43%, rgba(52,166,189,1) 100%);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .edit-info{
     font-family: 'Courier New', Courier, monospace;
